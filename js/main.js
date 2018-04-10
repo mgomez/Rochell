@@ -5,5 +5,11 @@
  */
 
 $(function() {
-	AOS.init();
+    AOS.init();
+
+    //formulario de contacto
+    $("#frm-contacto").on("submit", function() {
+            return false
+        })
+        .validate();
 });

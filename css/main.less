@@ -31,6 +31,20 @@ html {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -62,6 +76,20 @@ html {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
  * A better looking default horizontal rule
  */
@@ -74,6 +102,20 @@ hr {
     margin: 1em 0;
     padding: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -112,6 +154,20 @@ video {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
  * Remove default fieldset styles.
  */
@@ -121,6 +177,20 @@ fieldset {
     margin: 0;
     padding: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -152,6 +222,20 @@ textarea {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ==========================================================================
    Browser Upgrade Prompt
    ========================================================================== */
@@ -162,6 +246,20 @@ textarea {
     color: #000;
     padding: 0.2em 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -295,6 +393,20 @@ label.error {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /**
  *
  * HOME
@@ -373,6 +485,38 @@ label.error {
     }
 }
 
+.Servicio {
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    &.mantenimientoIndustrial {
+        background: #333 url(../img/servicios/mantenimientoIndustrial.png) center center fixed;
+    }
+    & .Servicio-title {
+        background: linear-gradient(45deg, rgba(102, 102, 102, 0.75), rgba(51, 51, 51, 0.9215686274509803));
+        border-top: 5px solid #693;
+        bottom: -90px;
+        color: #fff;
+        font-size: 54px;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        height: 90px;
+        line-height: 90px;
+        animation: bottomTitle .3s ease-in-out both;
+        overflow: hidden;
+        @media @mobile {
+            font-size: 34px;
+        }
+    }
+}
+
+@keyframes bottomTitle {
+    100% {
+        bottom: 0;
+    }
+}
+
 @keyframes tracking-in-expand {
     0% {
         letter-spacing: -0.5em;
@@ -435,7 +579,7 @@ label.error {
 }
 
 .Presupuestos {
-    background: #ccc url(../img/home/cotizar.webp) no-repeat center center fixed;
+    background: #ccc url(../img/home/cotizar.png) no-repeat center center fixed;
     background-size: cover;
     text-align: center;
     & h3,
@@ -492,31 +636,6 @@ label.error {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -529,6 +648,20 @@ label.error {
 .hidden {
     display: none !important;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -634,6 +767,20 @@ label.error {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
  * Extends the .visuallyhidden class to allow the element
  * to be focusable when navigated to via the keyboard:
@@ -693,6 +840,20 @@ label.error {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
  * Hide visually and from screen readers, but maintain layout
  */
@@ -700,6 +861,20 @@ label.error {
 .invisible {
     visibility: hidden;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -805,6 +980,20 @@ label.error {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -821,6 +1010,20 @@ label.error {
 (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -5,11 +5,16 @@
  */
 
 $(function() {
-    AOS.init();
+	AOS.init();
+	//servicios
+	$(document).on("click", ".Servicios-item", function() {
+		var view = $(this).data("view");
 
-    //formulario de contacto
-    $("#frm-contacto").on("submit", function() {
-            return false
-        })
-        .validate();
+		window.location = view + ".html";
+	});
+	//formulario de contacto
+	$("#frm-contacto").on("submit", function() {
+			return false
+		})
+		.validate();
 });
